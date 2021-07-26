@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.App {
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.modal{
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.modal button{
+  width: 150px;
+  padding:7px;
+  background-color: #4158d0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal button span{
+  margin-left: 10px;
+}
+.modal button:hover{
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+.myTable{
+  margin-top: 10px;
+  min-width: 550px;
+  border-collapse: collapse;
+}
+
+.myTable td, .myTable th {
+  padding: 10px;
+}
+.myTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #c850c0;
+  color: white;
+  
+}
+.editIcon:hover{
+  cursor: pointer;
+  color: #c850c0;
+}
+.popupModal{
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.popupHeader{
+  font-weight: 600;
+  font-size: 22px;
+}
+.popupModal form{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+}
+.popupModal input{
+  min-width: 300px;
+  padding: 5px;
+}
+.popupModal input[type="date"]{
+  margin-bottom: 10px;
+}
+.popupModal input[type="submit"]{
+  margin-bottom: 5px;
+  border: none;
+  padding: 5px; 
+  border-radius: 4px;
+}
+.popupModal input[type="submit"]:hover{
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+.addBtn{
+  background-color: #c850c0;
+  color: white;
+
+}
+.cancelBtn{
+  background-color: #4158d0;
+  color: white;
+}
+.popupModal label{
+  margin-top: 10px;
+}
